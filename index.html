@@ -10,8 +10,32 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <!-- Carousel extra styles -->
     <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="header.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <style type="text/css">
+        #present_content {
+                text-align: center;
+        }
+
+        #present_video {
+                position: relative;
+                top: 0;
+                bottom: 0;
+                align-content: center;
+                width: 40%;
+                height: 40%;
+                border: 0;
+        }
+
+        #standing {
+                text-align: center;
+        }
+     </style>
   </head>
+
   <body>
+
          <!-- NavBar -->
          <nav class="navbar navbar-default">
           <div class="container-fluid">
@@ -106,24 +130,67 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
+        <div class="container">
+          <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <div class="panel panel-info" >
+                     <div class="panel-heading">
+                                <div class="panel-title">Sign In</div>
+                        </div>
+                        <div style="padding-top:30px" class="panel-body" >
+                         <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                         <form id="loginform" class="form-horizontal" role="form">
+                         <div style="margin-bottom: 25px" class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                          <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="NT Account">
+                         </div>
+                        <div style="margin-bottom: 25px" class="input-group">
+                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="login-password" type="password" class="form-control" name="password" placeholder="NT Password">
+                       </div>
+                       <div style="margin-top:10px" class="form-group">
+                        <!-- Button -->
+                        <div class="col-sm-12 controls">
+                         <a id="btn-login" href="#" class="btn btn-success">Login  </a>
+                        </div>
+                       </div>
+                      </form>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <br/>
+          <!-- Video -->
+          <div class="sizer" id="present_content">
+                  <video id="present_video" controls>
+                        <source src="20URJC.mp4" type="video/mp4">
+                  </video>
+          </div>
+        <div id ="standing">
+                <button type="button" class="btn btn-default" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="btn btn-default" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+                </button>
 
-          <!-- Components Buttons -->
-          <span class="label label-default">Default</span>
-          <span class="label label-primary">Primary</span>
-          <span class="label label-success">Success</span>
-          <span class="label label-info">Info</span>
-          <span class="label label-warning">Warning</span>
-          <span class="label label-danger">Danger</span>
+                <button type="button" class="btn btn-default btn-lg">
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+                </button>
+        </div>
+        <div class="site-wrapper">
+                <div class="site-wrapper-inner">
+                    <div class="cover-container">
+                      <div class="masthead clearfix">
 
-          <!-- 16:9 aspect ratio -->
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="..."></iframe>
-</div>
+                      </div>
+                      <div class="mastfoot">
+                        <div class="inner">
 
-<!-- 4:3 aspect ratio -->
-<div class="embed-responsive embed-responsive-4by3">
-  <iframe class="embed-responsive-item" src="..."></iframe>
-</div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+        </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
